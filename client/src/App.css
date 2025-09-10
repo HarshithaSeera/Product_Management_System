@@ -1,0 +1,244 @@
+/* General Page Styling */
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #e6f4ea;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background: #0a9e4f;
+  color: white;
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-btn {
+  color: white;
+  background: #087a3d;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.nav-btn:hover {
+  background: #065c2b;
+}
+
+/* Home Page Carousel */
+/* Home Page */
+.home {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4f5f3; /* light green background */
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-indicators .indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.6);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.carousel-indicators .indicator.active {
+  background: rgba(255,255,255,1);
+}
+
+/* Home page main title */
+.home h2 {
+  font-family: 'Brush Script MT', cursive;
+;
+  font-size: 2.8rem;
+  color: #096b3a;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);}
+
+ 
+
+/* Product Form */
+.product-form {
+  flex: 1;
+  min-width: 320px;
+  background: #e6f4ea;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.product-form h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.product-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product-form input,
+.product-form button,
+.sort-buttons select {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.product-form input:focus {
+  border-color: #0a9e4f;
+  outline: none;
+}
+
+.product-form button {
+  background: #0a9e4f;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.product-form button:hover {
+  background: #087a3d;
+}
+
+/* Product List */
+.product-list {
+  flex: 2;
+  min-width: 350px;
+  background: #e6f4ea;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.product-list h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.sort-buttons {
+  margin-bottom: 15px;
+}
+
+.sort-buttons select {
+  border: 1px solid #ccc;
+  background: #e6f4ea;
+  cursor: pointer;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.product-card {
+  padding: 15px;
+  border-radius: 10px;
+  background: #e6f4ea;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  text-align: left;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card h3 {
+  margin: 0 0 10px;
+  color: #0a9e4f;
+  font-size: 1.1rem;
+}
+
+.product-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Buttons inside Product Card */
+.product-card button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+  border: none;
+  font-size: 14px;
+}
+
+.edit-btn {
+  background: #198754;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #146c43;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #b02a37;
+}
